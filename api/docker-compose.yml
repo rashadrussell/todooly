@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+  db:
+    container_name: todooly_db
+    image: mysql:5.7
+    command: mysqld --default-authentication-plugin=mysql_native_password
+    ports:
+      - "3306:3306"
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
+      - MYSQL_DATABASE=todooly
+      - MYSQL_USER=user
+      - MYSQL_PASSWORD=password
+  api:
+    container_name: todooly_api
+    build: .
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/todooly/api
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
