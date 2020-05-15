@@ -7,7 +7,7 @@ This repo is a tutorial for how to create a full-stack app using React, Django, 
 
 To view the completed source code, visit the "completed" branch:
 
-[**View full source code:**](https://github.com/rashadrussell/todooly/tree/completed)
+[**View full source code**](https://github.com/rashadrussell/todooly/tree/completed)
 
 **Pre-requisites**
 1. Install NodeJS - https://nodejs.org/en/
