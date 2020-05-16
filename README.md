@@ -12,3 +12,11 @@ To view the completed source code, visit the "completed" branch:
 **Pre-requisites**
 1. Install NodeJS - https://nodejs.org/en/
 2. Install Docker Desktop - https://www.docker.com/get-started
+
+**Docker Commands**
+
+- Create Django Project: `$ docker-compose run api django-admin startproject api .`
+- Run Django Migration: `$ docker-compose run api python manage.py migrate`
+- Create Django Migration Files: `$ docker-docker-compose run api python manage.py makemigrations`
+- Create a Django App: `$ docker-compose run api django-admin startapp todolist`
+- Start MySQL Server and API Server: `$ docker-compose up`
