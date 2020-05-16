@@ -15,8 +15,8 @@ To view the completed source code, visit the "completed" branch:
 
 **Docker Commands**
 
-- Run Python and Django Commands in api container
-`$ docker-compose run api [COMMAND]`
+- Run Python and Django Commands in api container: `$ docker-compose run api [COMMAND]`
+
 
 - Create Django Project: `$ docker-compose run api django-admin startproject api .`
 - Run Django Migration: `$ docker-compose run api python manage.py migrate`
